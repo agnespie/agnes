@@ -14,4 +14,4 @@ yes
 
 num_elements([], 0).
 
-num_elements([Head|Tail],   R):- num_elements(Tail, N) R is N+1
+num_elements([Head|Tail],   R):- num_elements(Tail, N), R is N+1
